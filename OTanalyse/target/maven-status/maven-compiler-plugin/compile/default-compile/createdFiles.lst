@@ -1,0 +1,15 @@
+at\jku\dke\OTanalyse\QueryExecuter.class
+com\metacase\type\MEOop.class
+com\metacase\wsdl\MetaEditAPIPortType.class
+com\metacase\type\MEAny.class
+com\metacase\wsdl\MetaEditAPISoapBindingStub.class
+at\jku\dke\OTanalyse\App.class
+at\jku\dke\OTanalyse\CommandLineOptionHandler.class
+com\metacase\type\METype.class
+com\metacase\type\MENull.class
+at\jku\dke\Model\Factor.class
+at\jku\dke\OTanalyse\MetaEditConnector.class
+com\metacase\wsdl\MetaEditAPILocator.class
+at\jku\dke\OTanalyse\App$1.class
+com\metacase\wsdl\MetaEditAPI.class
+com\metacase\wsdl\MetaEditAPIPortTypeProxy.class

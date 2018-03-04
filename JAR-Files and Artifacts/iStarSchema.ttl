@@ -1,0 +1,55 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix istar: <http://xmlns.com/istar/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://example.org/> .
+
+istar:Agent rdfs:subClassOf istar:Actor.
+	
+istar:Goal rdfs:subClassOf istar:IntentionalElement.
+	
+istar:Quality rdfs:subClassOf istar:IntentionalElement.
+	
+istar:Task rdfs:subClassOf istar:IntentionalElement.
+	
+istar:Ressource rdfs:subClassOf istar:IntentionalElement.
+	
+istar:relatedWith rdf:type rdf:Property;
+	rdfs:domain istar:Actor;
+	rdfs:range istar:Actor.
+	
+istar:isA rdf:type rdf:Property;
+	rdfs:domain istar:Actor;
+	rdfs:range istar:Actor;
+	rdfs:subPropertyOf istar:relatedWith.
+	
+istar:participatesIn rdf:type rdf:Property;
+	rdfs:domain istar:Actor;
+	rdfs:range istar:Actor;
+	rdfs:subPropertyOf istar:relatedWith.
+	
+istar:wants rdf:type rdf:Property;
+	rdfs:domain istar:Actor;
+	rdfs:range istar:IntentionalElement.
+	
+istar:dependerOf rdf:type rdf:Property.
+
+istar:contributesTo rdf:type rdf:Property;
+	rdfs:domain istar:IntentionalElement;
+	rdfs:range istar:Quality.
+
+istar:helps rdf:type rdf:Property;
+	rdfs:domain istar:IntentionalElement;
+	rdfs:range istar:Quality;
+	rdfs:subPropertyOf istar:contributesTo.
+	
+istar:hurts rdf:type rdf:Property;
+	rdfs:domain istar:IntentionalElement;
+	rdfs:range istar:Quality;
+	rdfs:subPropertyOf istar:contributesTo.
+	
+istar:qualifies rdf:type rdf:Property;
+	rdfs:domain istar:IntentionalElement;
+	rdfs:range istar:Quality.
+	
+istar:refines rdf:type rdf:Property;
+	rdfs:domain istar:IntentionalElement.

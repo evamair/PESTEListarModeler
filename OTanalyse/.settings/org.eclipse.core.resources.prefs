@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/com/metacase/type/MEAny.java=UTF-8
+encoding//src/main/java/com/metacase/type/MENull.java=UTF-8
+encoding//src/main/java/com/metacase/type/MEOop.java=UTF-8
+encoding//src/main/java/com/metacase/type/METype.java=UTF-8
+encoding//src/main/java/com/metacase/wsdl/MetaEditAPI.java=UTF-8
+encoding//src/main/java/com/metacase/wsdl/MetaEditAPILocator.java=UTF-8
+encoding//src/main/java/com/metacase/wsdl/MetaEditAPIPortType.java=UTF-8
+encoding//src/main/java/com/metacase/wsdl/MetaEditAPISoapBindingStub.java=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8

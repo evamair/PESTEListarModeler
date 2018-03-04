@@ -1,0 +1,19 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix istar: <http://xmlns.com/istar/0.1/> .
+@prefix pestel: <http://xmlns.com/pestel/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://example.org/> .
+
+pestel:PESTELFactor rdfs:subClassOf istar:Actor.
+	
+pestel:Political rdfs:subClassOf pestel:PESTELFactor.
+
+pestel:Economic rdfs:subClassOf pestel:PESTELFactor.
+
+pestel:Social rdfs:subClassOf pestel:PESTELFactor.
+
+pestel:Technological rdfs:subClassOf pestel:PESTELFactor.
+
+pestel:Environmental rdfs:subClassOf pestel:PESTELFactor.
+
+pestel:Legal rdfs:subClassOf pestel:PESTELFactor.
