@@ -1,0 +1,44 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix istar: <http://xmlns.com/istar/0.1/> .
+@prefix : <http://example.org/> .
+
+:Government rdf:type istar:Actor;
+	istar:dependerOf :zero;
+	istar:dependeeOf :drei.
+
+:test rdf:type istar:Quality;
+	istar:dependerOf :beta;
+	istar:dependeeOf :zwei.
+
+:jj rdf:type istar:ActorWithBoundary;
+	istar:wants :alpha;
+	istar:wants :beta.
+
+:hall rdf:type istar:AgentWithBoundary;
+	istar:wants :testdos;
+	istar:wants :testuno.
+
+:Political rdf:type :PESTELFactor;
+	istar:wants :drei;
+	istar:wants :zero;
+	istar:wants :zwei.
+
+:alpha rdf:type istar:Goal.
+
+:beta rdf:type istar:Quality;
+	istar:dependeeOf :test.
+
+:testdos rdf:type istar:Quality.
+
+:testuno rdf:type istar:Quality.
+
+:drei rdf:type istar:Quality;
+	istar:dependerOf :Government.
+
+:zero rdf:type istar:Quality;
+	istar:help :drei;
+	istar:dependeeOf :Government.
+
+:zwei rdf:type istar:Task;
+	istar:hurt :drei;
+	istar:dependerOf :test.
